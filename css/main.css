@@ -45,7 +45,6 @@ input {
 
 .aside-menu li {
     position: relative;
-    padding-left: 45px;
     font-style: italic;
 }
 
@@ -53,43 +52,53 @@ input {
     margin-top: 13px;
 }
 
-.icon-blog:not(:last-child) {
+.aside-menu li {
+    
+}
+
+.aside-menu li:not(:last-child) {
     margin-bottom: 52px;
 }
 
-.icon-blog::before {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 3px;
-    top: -10px;
-    background: no-repeat center center / cover;
+.aside-menu-icon {
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    word-break: break-word;
 }
 
-.aside-menu-tastemakers:before {
+.aside-menu-icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 7px;
+    background: url('../assets/svg/food-icon.svg') no-repeat center center / cover;
+}
+
+.icon-tastemakers::before {
     background-image: url('../assets/svg/food-icon.svg');
 }
 
-.aside-menu-blog:before {
+.icon-blog::before {
     background-image: url('../assets/svg/blog-icon.svg');
 }
 
-.aside-menu-list:before {
+.icon-list::before {
     background-image: url('../assets/svg/a-list-icon.svg');
 }
 
-.aside-menu-contribure:before {
+.icon-contribure::before {
     background-image: url('../assets/svg/camera-icon.svg');
 }
 
-.aside-menu-about:before {
+.icon-about::before {
     background-image: url('../assets/svg/about-icon.svg');
 }
 
 .aside-tweets {
-    margin-top: 40px;
+    margin-top: 44px;
 }
 
 .aside-head {
