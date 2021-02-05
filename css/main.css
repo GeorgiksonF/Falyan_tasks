@@ -52,10 +52,6 @@ input {
     margin-top: 13px;
 }
 
-.aside-menu li {
-    
-}
-
 .aside-menu li:not(:last-child) {
     margin-bottom: 52px;
 }
@@ -148,9 +144,16 @@ input {
     height: 445px;
     background: #ccc;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: flex-end;
     background: url(../assets/img/bg.jpg) no-repeat center center / cover;
+}
+
+.banner-content {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
 }
 
 .banner-header,
@@ -159,12 +162,13 @@ input {
     justify-content: center;
     flex-direction: column;
     font-style: italic;
-    padding-left: 24px;
+    padding: 14px 20px 14px 24px;
+
 }
 
 .banner-header {
     width: 272px;
-    height: 47px;
+    line-height: 22px;
     font-size: 22px;
     color: #000;
     background: #fff;
@@ -175,8 +179,6 @@ input {
     font-size: 14px;
     background: #000;
     color: #fff;
-    height: 49px;
-    margin-bottom: 70px;
 }
 
 .tabs {
@@ -184,7 +186,7 @@ input {
 }
 
 .tabs-item {
-    width: 25%;
+    flex-grow: 1;
     min-height: 85px;
     background: #EFF8F7;
     padding: 26px 20px 22px;
