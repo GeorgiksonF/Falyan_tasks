@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #34ACA7;
+}
+
+input {
+    outline: none;
+}
