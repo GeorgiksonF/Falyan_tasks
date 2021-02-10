@@ -43,27 +43,27 @@
     width: 30px;
     height: 30px;
     left: 7px;
-    background: url('../assets/svg/food-icon.svg') no-repeat center center / cover;
+    background: url('../../assets/svg/food-icon.svg') no-repeat center center / cover;
 }
 
 .menu__icon_tastemakers::before {
-    background-image: url('../assets/svg/food-icon.svg');
+    background-image: url('../../assets/svg/food-icon.svg');
 }
 
 .menu__icon_blog::before {
-    background-image: url('../assets/svg/blog-icon.svg');
+    background-image: url('../../assets/svg/blog-icon.svg');
 }
 
 .menu__icon_list::before {
-    background-image: url('../assets/svg/a-list-icon.svg');
+    background-image: url('../../assets/svg/a-list-icon.svg');
 }
 
 .menu__icon_contribure::before {
-    background-image: url('../assets/svg/camera-icon.svg');
+    background-image: url('../../assets/svg/camera-icon.svg');
 }
 
 .menu__icon_about::before {
-    background-image: url('../assets/svg/about-icon.svg');
+    background-image: url('../../assets/svg/about-icon.svg');
 }
 
 /* WIDGET */
@@ -109,5 +109,5 @@
 }
 
 .widget__btn_tweeter::before {
-    background: url('../assets/svg/twitter-icon-blue.svg') no-repeat center center / cover;
+    background: url('../../assets/svg/twitter-icon-blue.svg') no-repeat center center / cover;
 }

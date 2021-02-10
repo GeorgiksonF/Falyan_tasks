@@ -49,13 +49,13 @@
 }
 
 .social__link_tweeter {
-    background-image: url("../assets/svg/twitter-icon-gray.svg");
+    background-image: url("../../assets/svg/twitter-icon-gray.svg");
 }
 
 .social__link_facebook {
-    background-image: url("../assets/svg/fb-icon-gray.svg");
+    background-image: url("../../assets/svg/fb-icon-gray.svg");
 }
 
 .social__link_rss {
-    background-image: url("../assets/svg/rss-icon-gray.svg");
+    background-image: url("../../assets/svg/rss-icon-gray.svg");
 }
