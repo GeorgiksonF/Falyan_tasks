@@ -2,25 +2,27 @@
     width: 140px;
 }
 
-.logo-link {
+.logo {
     display: flex;
     justify-content: center;
 }
 
-.aside-menu li {
+/* ASIDE MENU */
+
+.aside__menu {
+    margin-top: 13px;
+}
+
+.aside__menu li {
     position: relative;
     font-style: italic;
 }
 
-.aside-menu {
-    margin-top: 13px;
-}
-
-.aside-menu li:not(:last-child) {
+.aside__menu li:not(:last-child) {
     margin-bottom: 36px;
 }
 
-.menu-icon {
+.menu__icon {
     display: flex;
     align-items: center;
     word-break: break-word;
@@ -30,11 +32,11 @@
     padding-left: 40px;
 }
 
-.menu-icon:hover {
+.menu__icon:hover {
     background: #ccc;
 }
 
-.menu-icon::before {
+.menu__icon::before {
     content: "";
     display: block;
     position: absolute;
@@ -44,31 +46,33 @@
     background: url('../assets/svg/food-icon.svg') no-repeat center center / cover;
 }
 
-.icon-tastemakers::before {
+.menu__icon_tastemakers::before {
     background-image: url('../assets/svg/food-icon.svg');
 }
 
-.icon-blog::before {
+.menu__icon_blog::before {
     background-image: url('../assets/svg/blog-icon.svg');
 }
 
-.icon-list::before {
+.menu__icon_list::before {
     background-image: url('../assets/svg/a-list-icon.svg');
 }
 
-.icon-contribure::before {
+.menu__icon_contribure::before {
     background-image: url('../assets/svg/camera-icon.svg');
 }
 
-.icon-about::before {
+.menu__icon_about::before {
     background-image: url('../assets/svg/about-icon.svg');
 }
 
-.aside-tweets {
+/* WIDGET */
+
+.aside__widgets {
     margin-top: 44px;
 }
 
-.aside-head {
+.widget__head {
     font-family: 'Verdana', sans-serif;
     text-transform: uppercase;
     font-size: 12px;
@@ -77,14 +81,14 @@
     border-bottom: 1px dashed #E5E5E5;
 }
 
-.aside-text {
+.widget__text {
     font-size: 10px;
     font-style: italic;
     line-height: 19px;
     margin: 10px 0 15px;
 }
 
-.aside-btn {
+.widget__btn {
     display: block;
     position: relative;
     font-size: 10px;
@@ -94,7 +98,7 @@
     border-radius: 5px;
 }
 
-.aside-btn::before {
+.widget__btn::before {
     content: "";
     display: block;
     position: absolute;
@@ -104,6 +108,6 @@
     top: 7px;
 }
 
-.icon-tweet-blue::before {
+.widget__btn_tweeter::before {
     background: url('../assets/svg/twitter-icon-blue.svg') no-repeat center center / cover;
 }

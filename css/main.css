@@ -21,7 +21,7 @@
     
 }
 
-.content-wrap {
+.main-wrap {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -43,14 +43,14 @@
     background: url(../assets/img/bg.jpg) no-repeat center center / cover;
 }
 
-.banner-content {
+.banner__content {
     position: absolute;
     left: 0;
     bottom: 70px;
 }
 
-.banner-header,
-.banner-description {
+.banner__header,
+.banner__description {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -59,7 +59,7 @@
 
 }
 
-.banner-header {
+.banner__header {
     width: 272px;
     line-height: 22px;
     font-size: 22px;
@@ -67,7 +67,7 @@
     background: #fff;
 }
 
-.banner-description {
+.banner__description {
     width: 487px;
     font-size: 14px;
     line-height: 15px;
@@ -80,18 +80,18 @@
     flex-wrap: wrap;
 }
 
-.tabs-item {
+.tabs__item {
     flex: 1 0;
     min-height: 85px;
     background: #EFF8F7;
     padding: 26px 20px 22px;
 }
 
-.tabs-item:not(:last-child) {
+.tabs__item:not(:last-child) {
     border-right: 1px solid #D6E6E6;
 }
 
-.tabs-item:hover {
+.tabs__item:hover {
     background: #D9EFEC;
     -webkit-transition: .3s;
        -moz-transition: .3s;
@@ -99,15 +99,17 @@
             transition: .3s;
 }
 
-.tab-head {
+.tab__head {
     font-size: 18px;
 }
 
-.tab-text {
+.tab__text {
     font-size: 10px;
     font-style: italic;
     line-height: 19px;
 }
+
+/* SUBSCRIBE */
 
 .subscribe {
     margin-top: 30px;
@@ -118,13 +120,13 @@
     display: flex;
 }
 
-.subscribe-icon {
+.subscribe__icon {
     width: 32px;
     height: 26px;
     background: url(../assets/svg/mail-icon.svg) no-repeat center center / cover;
 }
 
-.subscribe-text {
+.subscribe__text {
     font-size: 14px;
     font-style: italic;
     width: 530px;
@@ -132,13 +134,13 @@
     margin-left: 16px;
 }
 
-.subscribe-form {
+.subscribe__form {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.subscribe-input {
+.subscribe__input {
     margin-left: 24px;
     height: 22px;
     width: 160px;
@@ -147,15 +149,15 @@
     margin-right: 18px;
 }
 
-.subscribe-input::placeholder {
+.subscribe__input::placeholder {
     font-size: 10px;
 }
 
-.subscribe-input:hover {
+.subscribe__input:hover {
     border: 1px solid #E5E5E5;  
 }
 
-.subscribe-btn {
+.subscribe__btn {
     width: 80px;
     height: 22px;
     border-radius: 2px;
@@ -165,7 +167,7 @@
     cursor: pointer;
 }
 
-.subscribe-btn:active {
+.subscribe__btn:active {
     border: none;
 }
 
@@ -175,17 +177,17 @@
     margin-top: 30px;
 }
 
-.cards-item {   
+.cards__item {   
     letter-spacing: -0.02em;
     margin-bottom: 20px;
     flex: 0 1 207px;
 }
 
-.cards-item:not(:nth-child(4n)) {
+.cards__item:not(:nth-child(4n)) {
     margin-right: 23px;
 }
 
-.card-img-wrap {
+.card__img-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,56 +197,56 @@
     padding: 12px;
 }
 
-.card-img {
+.card__img {
     background: no-repeat center center / cover;
     width: 100%;
     height: 100%;
 }
 
-.card-cookbook {
+.card__img_cookbook {
     background-image: url('../assets/img/first.jpg');
 }
 
-.card-chips {
+.card__img_chips {
     background-image: url('../assets/img/second.jpg');
 }
 
-.card-pinterest {
+.card__img_pinterest {
     background-image: url('../assets/img/third.jpg');
 }
 
-.card-sunday {
+.card__img_sunday {
     background-image: url('../assets/img/fourth.jpg');
 }
 
-.card-header {
+.card__header {
     display: block;
     margin-top: 11px;
     font-size: 16px;
     line-height: 21px;
 }
 
-.card-text {
+.card__text {
     font-size: 14px;
     line-height: 20px;
     margin-top: 9px;    
 }
 
-.card-footer {
+.card__footer {
     margin-top: 10px;
 }
 
-.card-date {
+.card__date {
     color: #E5E5E5;
     font-size: 14px;
     line-height: 20px;
 }
 
-.card-date::after {
+.card__date::after {
     content: " /";
 }
 
-.card-link::after {
+.card__link::after {
     content: "...";
 }
 

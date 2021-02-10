@@ -1,4 +1,4 @@
-.footer-wrap {
+.footer__wrap {
     display: flex;
     justify-content: space-between;
     border-top: 2px solid #E5E5E5;
@@ -7,55 +7,55 @@
     margin-top: 20px;
 }
 
-.footer-links {
+.footer__links {
     display: flex;
     font-size: 12px;
 }
 
-.footer-links li {
+.footer__links li {
     padding: 0 4px 0 4px;
 }
 
-.footer-links li:first-child {
+.footer__links li:first-child {
     padding-left: 0;    
 }
 
-.footer-links li:last-child {
+.footer__links li:last-child {
     padding-right: 0;    
 }
 
-.footer-links li:not(:last-child) {
+.footer__links li:not(:last-child) {
     border-right: 1px solid #E5E5E5;
 }
 
-.footer-license {
+.footer__license {
     margin-top: 5px;
     font-size: 12px;
     color: #E5E5E5;
 }
 
-.footer-social {
+.social {
     display: flex;
 }
 
-.footer-social-link {
+.social__link {
     background: no-repeat center center / cover;
     height: 32px;
     width: 32px;
 }
 
-.footer-social-link:not(:last-child) {
+.social__link:not(:last-child) {
     margin-right: 4px;
 }
 
-.icon-tweet-gray {
+.social__link_tweeter {
     background-image: url("../assets/svg/twitter-icon-gray.svg");
 }
 
-.icon-facebook-gray {
+.social__link_facebook {
     background-image: url("../assets/svg/fb-icon-gray.svg");
 }
 
-.icon-rss-gray {
+.social__link_rss {
     background-image: url("../assets/svg/rss-icon-gray.svg");
 }
