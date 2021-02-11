@@ -172,3 +172,22 @@
         line-height: 34px;
     }
 }
+
+@media only all and (max-width: 480px) {
+    .aside {
+        flex-direction: column-reverse;
+    }
+    
+    .logo {
+        margin: 0;
+        margin-top: 34px;
+    }
+
+    .aside__menu {
+        justify-content: center;
+    }
+
+    .aside__menu li {
+        min-width: 80px;
+    }
+}

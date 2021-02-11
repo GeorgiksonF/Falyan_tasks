@@ -44,3 +44,9 @@
         margin-right: 0;
     }
 }
+
+@media only all and (max-width: 480px) {
+    .container {
+        padding: 0;
+    }
+}
