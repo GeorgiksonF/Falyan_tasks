@@ -1,5 +1,5 @@
 .main {
-    width: 900px;
+    flex: 1 1 82%;
 }
 
 .banner {
@@ -50,8 +50,9 @@
 }
 
 .tabs__item {
+    display: flex;
+    flex-direction: column;
     flex: 1 0;
-    min-height: 85px;
     background: #EFF8F7;
     padding: 26px 20px 22px;
 }
@@ -81,12 +82,12 @@
 /* SUBSCRIBE */
 
 .subscribe {
+    display: flex;
     margin-top: 30px;
     border-top: 1px dashed #E5E5E5;
     border-bottom: 1px dashed #E5E5E5;
     align-items: center;
     padding: 10px 18px 10px;
-    display: flex;
 }
 
 .subscribe__icon {
@@ -96,9 +97,10 @@
 }
 
 .subscribe__text {
+    flex: 1 1;
     font-size: 14px;
     font-style: italic;
-    width: 530px;
+    max-width: 530px;
     line-height: 16px;
     margin-left: 16px;
 }
@@ -149,12 +151,13 @@
 .cards__item {   
     letter-spacing: -0.02em;
     margin-bottom: 20px;
-    flex: 0 1 207px;
+    flex: 1 0;
+    max-width: 207px;
 }
 
 .cards__item:not(:nth-child(4n)) {
-    margin-right: 23px;
-}
+    margin-right: 20px;
+}   
 
 .card__img-wrap {
     display: flex;
@@ -217,4 +220,24 @@
 
 .card__link::after {
     content: "...";
+}
+
+@media only all and (max-width: 1176px) {
+    .tabs__item {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .tab__text {
+        display: none;
+    }
+
+    .cards__item {
+        flex-basis: 159px;
+        min-width: 159px;
+    }
+
+    .cards__item:not(:nth-child(4n)) {
+        margin-right: 25px;
+    }  
 }

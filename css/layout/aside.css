@@ -1,5 +1,8 @@
 .aside {
-    width: 140px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 140px;
+    min-width: 140px;
 }
 
 .logo {
@@ -10,12 +13,13 @@
 /* ASIDE MENU */
 
 .aside__menu {
+    display: flex;
+    flex-direction: column;
     margin-top: 13px;
 }
 
-.aside__menu li {
-    position: relative;
-    font-style: italic;
+.menu__item {
+    display: flex;  
 }
 
 .aside__menu li:not(:last-child) {
@@ -26,44 +30,44 @@
     display: flex;
     align-items: center;
     word-break: break-word;
+    width: 30px;
+    height: 30px;
     min-height: 30px;
-    line-height: 22px;
-    margin-left: 5px;
-    padding-left: 40px;
 }
 
-.menu__icon:hover {
+.menu__item:hover {
     background: #ccc;
 }
 
-.menu__icon::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
+.menu__icon {
     left: 7px;
     background: url('../../assets/svg/food-icon.svg') no-repeat center center / cover;
 }
 
-.menu__icon_tastemakers::before {
+.menu__tastemakers {
     background-image: url('../../assets/svg/food-icon.svg');
 }
 
-.menu__icon_blog::before {
+.menu__blog {
     background-image: url('../../assets/svg/blog-icon.svg');
 }
 
-.menu__icon_list::before {
+.menu__list {
     background-image: url('../../assets/svg/a-list-icon.svg');
 }
 
-.menu__icon_contribure::before {
+.menu__contribure {
     background-image: url('../../assets/svg/camera-icon.svg');
 }
 
-.menu__icon_about::before {
+.menu__about {
     background-image: url('../../assets/svg/about-icon.svg');
+}
+
+.menu__text {
+    font-style: italic;
+    line-height: 22px;
+    margin-left: 5px;
 }
 
 /* WIDGET */
@@ -110,4 +114,42 @@
 
 .widget__btn_tweeter::before {
     background: url('../../assets/svg/twitter-icon-blue.svg') no-repeat center center / cover;
+}
+
+@media only all and (max-width: 992px) {
+    .aside {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .aside__menu {
+        flex-direction: row;
+        flex-wrap: wrapj;
+        margin: 0;
+        width: auto;
+        
+    }
+
+    .aside__menu li {
+        width: 100px;
+    }
+
+    .aside__menu li:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .menu__item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .menu__text {
+        margin: 0;
+    }
+
+    .aside__widgets {
+        display: none;
+    }
 }

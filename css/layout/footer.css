@@ -1,6 +1,7 @@
 .footer__wrap {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     border-top: 2px solid #E5E5E5;
     padding: 23px 8px 0;
     height: 90px;
