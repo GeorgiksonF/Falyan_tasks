@@ -1,3 +1,5 @@
+@import url("cards.css");
+
 .main {
     flex: 1 1 82%;
 }
@@ -148,87 +150,6 @@
     border: none;
 }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.cards__item {   
-    letter-spacing: -0.02em;
-    margin-bottom: 20px;
-    flex: 1 1;
-    max-width: 207px;
-    min-width: 156px;
-}
-
-.cards__item:not(:nth-child(4n)) {
-    margin-right: 20px;
-}   
-
-.card__img-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 143px;
-    border: 1px solid #E5E5E5;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-    padding: 12px;
-}
-
-.card__img {
-    background: no-repeat center center / cover;
-    width: 100%;
-    height: 100%;
-}
-
-.card__img_cookbook {
-    background-image: url('../../assets/img/first.jpg');
-}
-
-.card__img_chips {
-    background-image: url('../../assets/img/second.jpg');
-}
-
-.card__img_pinterest {
-    background-image: url('../../assets/img/third.jpg');
-}
-
-.card__img_sunday {
-    background-image: url('../../assets/img/fourth.jpg');
-}
-
-.card__header {
-    display: block;
-    margin-top: 11px;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.card__text {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 9px;    
-}
-
-.card__footer {
-    margin-top: 10px;
-}
-
-.card__date {
-    color: #E5E5E5;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.card__date::after {
-    content: " /";
-}
-
-.card__link::after {
-    content: "...";
-}
-
 @media only all and (max-width: 1176px) {
     .tabs__item {
         padding: 10px;
@@ -242,10 +163,6 @@
     .tab__text {
         display: none;
     }
-
-    .cards__item:not(:nth-child(4n)) {
-        margin-right: 25px;
-    }  
 }
 
 @media only all and (max-width: 768px) {
@@ -286,30 +203,6 @@
 
     .subscribe__input {
         flex: 1 0;
-    }
-
-    .cards__item {
-        min-width: 40%;
-        max-width: 50%;
-    }
-
-    .cards__item:not(:nth-child(4n)) {
-        margin-right: 0;
-    }
-
-    .cards__item:not(:nth-child(2n)) {
-        margin-right: 32px;
-    }
+    } 
 }
 
-@media only all and (max-width: 480px) {
-    .cards__item {
-        min-width: 80%;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .cards__item:not(:nth-child(2n)) {
-        margin-right: 0;
-    }
-}

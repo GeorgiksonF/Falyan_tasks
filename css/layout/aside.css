@@ -186,8 +186,4 @@
     .aside__menu {
         justify-content: center;
     }
-
-    .aside__menu li {
-        min-width: 80px;
-    }
 }
