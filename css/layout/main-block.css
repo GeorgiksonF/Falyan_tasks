@@ -16,6 +16,7 @@
     position: absolute;
     left: 0;
     bottom: 70px;
+    width: 100%;
 }
 
 .banner__header,
@@ -25,11 +26,10 @@
     flex-direction: column;
     font-style: italic;
     padding: 14px 20px 14px 24px;
-
 }
 
 .banner__header {
-    width: 272px;
+    max-width: 272px;
     line-height: 22px;
     font-size: 22px;
     color: #000;
@@ -37,7 +37,7 @@
 }
 
 .banner__description {
-    width: 487px;
+    max-width: 487px;
     font-size: 14px;
     line-height: 15px;
     background: #000;
@@ -52,7 +52,7 @@
 .tabs__item {
     display: flex;
     flex-direction: column;
-    flex: 1 0;
+    flex: 1 0 20%;
     background: #EFF8F7;
     padding: 26px 20px 22px;
 }
@@ -90,6 +90,12 @@
     padding: 10px 18px 10px;
 }
 
+.subscribe__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .subscribe__icon {
     width: 32px;
     height: 26px;
@@ -109,10 +115,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 24px;
 }
 
 .subscribe__input {
-    margin-left: 24px;
     height: 22px;
     width: 160px;
     border: 1px solid #E5E5E5;
@@ -151,7 +157,7 @@
 .cards__item {   
     letter-spacing: -0.02em;
     margin-bottom: 20px;
-    flex: 1 0;
+    flex: 1 1;
     max-width: 207px;
 }
 
@@ -228,16 +234,57 @@
         justify-content: center;
     }
 
-    .tab__text {
-        display: none;
+    .tab__head {
+        text-align: center;
     }
 
-    .cards__item {
-        flex-basis: 159px;
-        min-width: 159px;
+    .tab__text {
+        display: none;
     }
 
     .cards__item:not(:nth-child(4n)) {
         margin-right: 25px;
     }  
+}
+
+@media only all and (max-width: 768px) {
+    .banner__header,
+    .banner__description {
+        min-width: 100%;
+    }
+    
+    .banner__header {
+        opacity: .6;
+    }
+
+    .banner__content {
+        bottom: 0;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .subscribe {
+        flex-direction: column;
+    }
+
+    .subscribe__form {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .subscribe__input {
+        flex: 1 0;
+    }
+
+    .cards__item {
+        flex-basis: 256px;
+        max-width: 500px;
+    }
+
+    .cards__item:not(:nth-child(2n)) {
+        margin-right: 32px;
+    }
 }
