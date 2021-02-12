@@ -38,12 +38,14 @@
 
 .social {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .social__link {
     background: no-repeat center center / cover;
     height: 32px;
     width: 32px;
+    margin-bottom: 4px;
 }
 
 .social__link:not(:last-child) {
@@ -64,7 +66,7 @@
 
 @media only all and (max-width: 330px) {
     .footer__wrap {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 

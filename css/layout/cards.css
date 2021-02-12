@@ -7,12 +7,13 @@
 .card {   
     letter-spacing: -0.02em;
     margin-bottom: 20px;
-    flex: 1 1 170px;
+    flex: 1 1 157px;
     max-width: 207px;
+    margin-right: 20px;
 }
 
-.card:not(:nth-child(4n)) {
-    margin-right: 20px;
+.card:nth-child(4n) {
+    margin-right: 0;
 }   
 
 .card__img-wrap {
@@ -79,26 +80,29 @@
 }
 
 @media only all and (max-width: 1176px) {
-    .card:not(:nth-child(4n)) {
+    .card {
         margin-right: 25px;
-    } 
+    }
+}
+
+@media only all and (max-width: 769px) and (max-width: 807px) {
+    .card {
+        margin-right: 32px;
+    }
 }
 
 @media only all and (max-width: 768px) {
     .card {
         flex-basis: 40%;
         max-width: 50%;
-    }
-
-    .card:not(:nth-child(4n)) {
-        margin-right: 0;
-    }
-
-    .card:not(:nth-child(2n)) {
         margin-right: 32px;
     }
-
+    
+    .card:nth-child(2n) {
+        margin-right: 0;
+    }
 }
+
 
 @media only all and (max-width: 480px) {
     .cards {
@@ -113,8 +117,10 @@
         margin: 15px auto 0;
     }
 
-    .card:not(:nth-child(4n)) {
+    .card:not(:nth-child(4n)),
+    .card:nth-child(4n) {
         margin-right: auto;
+        margin-left: auto;  
     }
 
     .card__img-wrap {
