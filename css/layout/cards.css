@@ -109,6 +109,15 @@
     .card {
         flex-basis: 90%;
         max-width: 90%;
-        margin: 15px 40px 0 !important;
+        width: 80%;
+        margin: 15px auto 0;
+    }
+
+    .card:not(:nth-child(4n)) {
+        margin-right: auto;
+    }
+
+    .card__img-wrap {
+        min-height: 198px;
     }
 }

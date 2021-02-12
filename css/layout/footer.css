@@ -4,7 +4,7 @@
     width: 100%;
     border-top: 2px solid #E5E5E5;
     padding: 23px 8px 0;
-    height: 90px;
+    min-height: 90px;
     margin-top: 20px;
 }
 
@@ -75,5 +75,12 @@
 
     .footer__social {
         flex-grow: 1;
+    }
+}
+
+@media only all and (max-width: 480px) {
+    .footer__wrap {
+        width: 90%;
+        margin: 20px auto 0;
     }
 }
