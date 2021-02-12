@@ -39,6 +39,7 @@
 .social {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .social__link {
@@ -64,6 +65,14 @@
     background-image: url("../../assets/svg/rss-icon-gray.svg");
 }
 
+
+@media only all and (max-width: 480px) {
+    .footer__wrap {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+}
+
 @media only all and (max-width: 330px) {
     .footer__wrap {
         flex-direction: column-reverse;
@@ -73,16 +82,5 @@
     .footer__info {
         margin-top: 12px;
         margin-bottom: 10px;
-    }
-
-    .footer__social {
-        flex-grow: 1;
-    }
-}
-
-@media only all and (max-width: 480px) {
-    .footer__wrap {
-        width: 90%;
-        margin: 20px auto 0;
     }
 }
