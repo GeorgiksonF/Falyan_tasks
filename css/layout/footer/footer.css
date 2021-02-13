@@ -1,3 +1,7 @@
+/* SOCIAL LINKS */
+
+@import url("social.css");
+
 .footer__wrap {
     display: flex;
     justify-content: space-between;
@@ -15,7 +19,8 @@
 }
 
 .footer__links li {
-    padding: 0 4px 0 4px;
+    padding: 0 4px;
+    border-right: 1px solid #E5E5E5;
 }
 
 .footer__links li:first-child {
@@ -23,11 +28,8 @@
 }
 
 .footer__links li:last-child {
-    padding-right: 0;    
-}
-
-.footer__links li:not(:last-child) {
-    border-right: 1px solid #E5E5E5;
+    padding-right: 0;
+    border-right: none;   
 }
 
 .footer__license {
@@ -35,36 +37,6 @@
     font-size: 12px;
     color: #E5E5E5;
 }
-
-.social {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.social__link {
-    background: no-repeat center center / cover;
-    height: 32px;
-    width: 32px;
-    margin-bottom: 4px;
-}
-
-.social__link:not(:last-child) {
-    margin-right: 4px;
-}
-
-.social__link_tweeter {
-    background-image: url("../../assets/svg/twitter-icon-gray.svg");
-}
-
-.social__link_facebook {
-    background-image: url("../../assets/svg/fb-icon-gray.svg");
-}
-
-.social__link_rss {
-    background-image: url("../../assets/svg/rss-icon-gray.svg");
-}
-
 
 @media only all and (max-width: 480px) {
     .footer__wrap {

@@ -16,7 +16,7 @@
 .subscribe__icon {
     width: 32px;
     height: 26px;
-    background: url("../../assets/svg/mail-icon.svg") no-repeat center center / cover;
+    background: url("../../../assets/svg/mail-icon.svg") no-repeat center center / cover;
 }
 
 .subscribe__text {

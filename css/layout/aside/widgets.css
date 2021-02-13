@@ -1,0 +1,49 @@
+.aside__widgets {
+    margin-top: 44px;
+}
+
+.widget__head {
+    font-family: 'Verdana', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #E5E5E5;
+}
+
+.widget__text {
+    font-size: 10px;
+    font-style: italic;
+    line-height: 19px;
+    margin: 10px 0 15px;
+}
+
+.widget__btn {
+    display: block;
+    position: relative;
+    font-size: 10px;
+    font-style: italic;
+    padding: 10px 6px 10px 29px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+}
+
+.widget__btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 7px;
+    top: 7px;
+}
+
+.widget__btn_tweeter::before {
+    background: url('../../../assets/svg/twitter-icon-blue.svg') no-repeat center center / cover;
+}
+
+@media only all and (max-width: 992px) {
+    .aside__widgets {
+        display: none;
+    }
+}

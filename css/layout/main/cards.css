@@ -33,19 +33,19 @@
 }
 
 .card__img_cookbook {
-    background-image: url('../../assets/img/first.jpg');
+    background-image: url('../../../assets/img/first.jpg');
 }
 
 .card__img_chips {
-    background-image: url('../../assets/img/second.jpg');
+    background-image: url('../../../assets/img/second.jpg');
 }
 
 .card__img_pinterest {
-    background-image: url('../../assets/img/third.jpg');
+    background-image: url('../../../assets/img/third.jpg');
 }
 
 .card__img_sunday {
-    background-image: url('../../assets/img/fourth.jpg');
+    background-image: url('../../../assets/img/fourth.jpg');
 }
 
 .card__header {
@@ -100,6 +100,10 @@
     
     .card:nth-child(2n) {
         margin-right: 0;
+    }
+
+    .card__img-wrap {
+        min-height: 160px;
     }
 }
 
