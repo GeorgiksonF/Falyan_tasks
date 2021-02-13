@@ -8,8 +8,12 @@
     display: flex;  
 }
 
-.aside__menu li:not(:last-child) {
+.aside__menu li {
     margin-bottom: 36px;
+}
+
+.aside__menu li:last-child {
+    margin-bottom: 0;
 }
 
 .menu__icon {
@@ -62,17 +66,14 @@
         flex-wrap: wrap;
         margin: 0;
         width: auto;
-    }
-    
+    }пше
+
     .aside__menu li {
-        min-width: 100px;
-    }
-    
-    .aside__menu li:not(:last-child) {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     
     .menu__item {
+        padding: 0 20px;
         flex-direction: column;
         align-items: center;
         margin-bottom: 0;
@@ -89,17 +90,15 @@
 
 @media only all and (max-width: 768px) {
     
+    .aside__menu {
+        justify-content: center;
+    }
+    
     .menu__icon {
         display: none;
     }
     
     .menu__text {
         line-height: 34px;
-    }
-}
-
-@media only all and (max-width: 480px) {
-    .aside__menu {
-        justify-content: center;
     }
 }

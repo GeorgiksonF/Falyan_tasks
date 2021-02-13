@@ -2,6 +2,10 @@
 
 @import url("social.css");
 
+.footer {
+    margin-top: 20px;
+}
+
 .footer__wrap {
     display: flex;
     justify-content: space-between;
@@ -9,7 +13,6 @@
     border-top: 2px solid #E5E5E5;
     padding: 23px 8px 0;
     min-height: 90px;
-    margin-top: 20px;
 }
 
 .footer__links {
@@ -45,7 +48,7 @@
     }
 }
 
-@media only all and (max-width: 330px) {
+@media only all and (max-width: 369px) {
     .footer__wrap {
         flex-direction: column-reverse;
         align-items: center;
