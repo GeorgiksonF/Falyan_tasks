@@ -6,7 +6,7 @@
 .tabs__item {
     display: flex;
     flex-direction: column;
-    flex: 1 0 20%;
+    flex: 1 0 19%;
     background: #EFF8F7;
     padding: 26px 20px 22px;
 }
