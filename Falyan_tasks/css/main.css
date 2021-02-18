@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body {
+  background: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body a {
+  color: white;
+}
+
+/* Удалить файл */
