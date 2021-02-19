@@ -1,8 +1,73 @@
-body {
-    background: green;
-    a {
-        color: white;
-    }
-    display: flex;
+@import "reset";
+@import "fonts";
+
+/* BASE STYLES */
+
+@import "base";
+
+/* ASIDE */
+
+@import "layout/aside/aside";
+
+/* MAIN BLOCK */
+
+@import "layout/main/main-block";
+
+/* FOOTER */
+
+@import "layout/footer/footer";
+
+/* CONTAINER */
+
+.container {
+    max-width: 1080px;
+    padding: 0 4%;
+    margin: 0 auto;
 }
-/* Удалить файл */
+
+.main-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.content:first-child {
+    margin-right: 44px;
+}
+
+.main {
+    flex: 1 1 900px;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 140px;
+}
+
+@media only all and (max-width: 992px) {
+    .main-wrap {
+        flex-direction: column;
+    }
+
+    .content:first-child {
+        margin-right: 0;
+    }
+
+    .aside {
+        flex-direction: row;    
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+}
+
+@media only all and (max-width: 480px) {
+    .container {
+        padding: 0;
+    }
+
+    .aside {
+        flex-direction: column-reverse;
+    }
+}
