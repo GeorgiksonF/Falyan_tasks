@@ -1,5 +1,9 @@
 .widgets {
     margin-top: 44px;
+    
+    @media only all and (max-width: 992px) {
+        display: none;
+    }
 }
 
 .widget {
@@ -38,9 +42,5 @@
             left: 7px;
             top: 7px;
         }
-    }
-    
-    @media only all and (max-width: 992px) {
-        display: none;
     }
 }
