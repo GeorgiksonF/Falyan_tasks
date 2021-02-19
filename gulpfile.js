@@ -34,7 +34,8 @@ let { src, dest } = require('gulp'),
     autoprefixer = require("gulp-autoprefixer"),
     group_media = require("gulp-group-css-media-queries"),
     clean_css = require("gulp-clean-css"),
-    rename = require("gulp-rename");
+    rename = require("gulp-rename"),
+	modifyCssUrls = require('gulp-modify-css-urls');
 
 function browserSync() {
     browsersync.init({
@@ -66,6 +67,13 @@ function css() {
 			autoprefixer({
 				overrideBrowserslist: ["last 5 versions"],
 				cascade: true
+			})
+		)
+		.pipe(
+			modifyCssUrls({
+				modify: function (url, filePath) {
+					return url.substr(6)
+				}
 			})
 		)
 		.pipe(dest(path.build.css))
