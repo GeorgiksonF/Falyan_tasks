@@ -152,7 +152,7 @@ body {
   color: #000;
 }
 
-a {
+body a {
   text-decoration: none;
   color: #34ACA7;
 }
@@ -289,7 +289,7 @@ a {
 /* BANNER */
 
 .banner {
-  height: 445px;
+  min-height: 445px;
   background: #ccc;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -10,54 +10,54 @@
     flex: 1 1 157px;
     max-width: 207px;
     margin-right: 20px;
-}
-
-.card:nth-child(4n) {
-    margin-right: 0;
-}   
-
-.card__img-wrap {
-    display: flex;
-    height: 143px;
-    border: 1px solid #E5E5E5;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-    padding: 12px;
-}
-
-.card__img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.card__header {
-    display: block;
-    margin-top: 11px;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.card__text {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 9px;    
-}
-
-.card__footer {
-    margin-top: 10px;
-}
-
-.card__date {
-    color: #E5E5E5;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.card__date::after {
-    content: " /";
-}
-
-.card__link::after {
-    content: "...";
+    
+    &:nth-child(4n) {
+        margin-right: 0;
+    }   
+    
+    &__img-wrap {
+        display: flex;
+        height: 143px;
+        border: 1px solid #E5E5E5;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+        padding: 12px;
+    }
+    
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    &__header {
+        display: block;
+        margin-top: 11px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 9px;    
+    }
+    
+    &__footer {
+        margin-top: 10px;
+    }
+    
+    &__date {
+        color: #E5E5E5;
+        font-size: 14px;
+        line-height: 20px;
+        
+        &::after {
+            content: " /";
+        }
+    }
+    
+    &__link::after {
+        content: "...";
+    }
 }
 
 @media only all and (max-width: 1176px) {
@@ -77,14 +77,14 @@
         flex-basis: 40%;
         max-width: 50%;
         margin-right: 32px;
-    }
+        
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
     
-    .card:nth-child(2n) {
-        margin-right: 0;
-    }
-
-    .card__img-wrap {
-        min-height: 160px;
+        &__img-wrap {
+            min-height: 160px;
+        }
     }
 }
 
@@ -100,15 +100,15 @@
         max-width: 90%;
         width: 80%;
         margin: 15px auto 0;
-    }
-
-    .card:not(:nth-child(4n)),
-    .card:nth-child(4n) {
-        margin-right: auto;
-        margin-left: auto;  
-    }
-
-    .card__img-wrap {
-        min-height: 198px;
+        
+        &:not(:nth-child(4n)),
+        &:nth-child(4n) {
+            margin-right: auto;
+            margin-left: auto;  
+        }
+    
+        &__img-wrap {
+            min-height: 198px;
+        }
     }
 }
