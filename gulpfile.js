@@ -1,16 +1,16 @@
-const { src, dest } = require('gulp'),
-    gulp = require('gulp'),
-    browsersync = require("browser-sync").create(),
-    del = require("del"),
-    scss = require("gulp-sass"),
-    autoprefixer = require("gulp-autoprefixer"),
-    group_media = require("gulp-group-css-media-queries"),
-    clean_css = require("gulp-clean-css"),
-    rename = require("gulp-rename"),
-	modifyCssUrls = require('gulp-modify-css-urls');
+const { src, dest } = require('gulp');
+const gulp = require('gulp');
+const browsersync = require("browser-sync").create();
+const del = require("del");
+const scss = require("gulp-sass");
+const autoprefixer = require("gulp-autoprefixer");
+const group_media = require("gulp-group-css-media-queries");
+const clean_css = require("gulp-clean-css");
+const rename = require("gulp-rename");
+const modifyCssUrls = require('gulp-modify-css-urls');
 
-let project_folder = "dist";
-let source_folder = "src";
+const project_folder = "dist";
+const source_folder = "src";
 
 let path = {
 	build: {
