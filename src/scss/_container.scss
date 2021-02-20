@@ -1,0 +1,29 @@
+.container {
+    max-width: 1080px;
+    padding: 0 4%;
+    margin: 0 auto;
+
+    @media only all and (max-width: 480px) {
+        padding: 0;
+    }
+}
+
+.main-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.content:first-child {
+    margin-right: 44px;
+}
+
+@media only all and (max-width: 992px) {
+    .main-wrap {
+        flex-direction: column;
+    }
+
+    .content:first-child {
+        margin-right: 0;
+    }
+}

@@ -1,6 +1,16 @@
+const { src, dest } = require('gulp'),
+    gulp = require('gulp'),
+    browsersync = require("browser-sync").create(),
+    del = require("del"),
+    scss = require("gulp-sass"),
+    autoprefixer = require("gulp-autoprefixer"),
+    group_media = require("gulp-group-css-media-queries"),
+    clean_css = require("gulp-clean-css"),
+    rename = require("gulp-rename"),
+	modifyCssUrls = require('gulp-modify-css-urls');
 
-let project_folder = require("path").basename(__dirname);
-let source_folder = "#src";
+let project_folder = "dist";
+let source_folder = "src";
 
 let path = {
 	build: {
@@ -26,17 +36,6 @@ let path = {
 	clean: "./" + project_folder + "/"
 }
 
-let { src, dest } = require('gulp'),
-    gulp = require('gulp'),
-    browsersync = require("browser-sync").create(),
-    del = require("del"),
-    scss = require("gulp-sass"),
-    autoprefixer = require("gulp-autoprefixer"),
-    group_media = require("gulp-group-css-media-queries"),
-    clean_css = require("gulp-clean-css"),
-    rename = require("gulp-rename"),
-	modifyCssUrls = require('gulp-modify-css-urls');
-
 function browserSync() {
     browsersync.init({
         server: {
@@ -55,34 +54,13 @@ function html() {
 
 function css() {
 	return src(path.src.css)
-		.pipe(
-			scss({
-				outputStyle: "expanded"
-			})
-		)
-		.pipe(
-			group_media()
-		)
-		.pipe(
-			autoprefixer({
-				overrideBrowserslist: ["last 5 versions"],
-				cascade: true
-			})
-		)
-		.pipe(
-			modifyCssUrls({
-				modify: function (url, filePath) {
-					return url.substr(6)
-				}
-			})
-		)
+		.pipe(scss({outputStyle: "expanded"}))
+		.pipe(group_media())
+		.pipe(autoprefixer({overrideBrowserslist: ["last 5 versions"], cascade: true}))
+		.pipe(modifyCssUrls({modify: function (url, filePath) {return url.substr(6)}}))
 		.pipe(dest(path.build.css))
 		.pipe(clean_css())
-		.pipe(
-			rename({
-				extname: ".min.css"
-			})
-		)
+		.pipe(rename({extname: ".min.css"}))
 		.pipe(dest(path.build.css))
 		.pipe(browsersync.stream())
 }
@@ -94,7 +72,7 @@ function images() {
 }
 
 function fonts() {
-    src(path.src.fonts)
+    return src(path.src.fonts)
         .pipe(dest(path.build.fonts));
 }
 

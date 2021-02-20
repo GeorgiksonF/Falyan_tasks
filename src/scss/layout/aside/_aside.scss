@@ -1,0 +1,22 @@
+@import "menu";
+
+@import "widgets";
+
+@import "logo";
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 140px;
+
+    @media only all and (max-width: 992px) {
+        flex-direction: row;    
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    @media only all and (max-width: 480px) {
+        flex-direction: column-reverse;
+    }
+}

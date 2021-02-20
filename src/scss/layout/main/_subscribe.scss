@@ -13,13 +13,12 @@
     }
     
     &__icon {
-        width: 32px;
+        min-width: 32px;
         height: 26px;
         background: url("../../../assets/svg/mail-icon.svg") no-repeat center center / cover;
     }
     
     &__text {
-        flex: 1 0;
         font-size: 14px;
         font-style: italic;
         max-width: 530px;

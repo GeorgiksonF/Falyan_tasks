@@ -1,16 +1,11 @@
-/* BANNER */
-
 @import "banner";
-
-/* MAIN TABS */
 
 @import "tabs";
 
-/* SUBSCRIBE FORM BLOCK */
-
 @import "subscribe";
-
-/* CARDS */
 
 @import "cards";
 
+.main {
+    flex: 1 1 900px;
+}
