@@ -1,6 +1,5 @@
 .banner {
     min-height: 445px;
-    background: #ccc;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -27,7 +26,7 @@
         max-width: 272px;
         line-height: 22px;
         font-size: 22px;
-        color: #000;
+        color: $dark;
         background: #fff;
     }
     
@@ -35,7 +34,7 @@
         max-width: 487px;
         font-size: 14px;
         line-height: 15px;
-        background: #000;
+        background: $dark;
         color: #fff;
     }
 }

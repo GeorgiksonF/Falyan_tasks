@@ -1,8 +1,8 @@
 .subscribe {
     display: flex;
     margin-top: 30px;
-    border-top: 1px dashed #E5E5E5;
-    border-bottom: 1px dashed #E5E5E5;
+    border-top: 1px dashed $smokie;
+    border-bottom: 1px dashed $smokie;
     align-items: center;
     padding: 10px 18px 10px;
     
@@ -36,7 +36,7 @@
     &__input {
         height: 22px;
         width: 160px;
-        border: 1px solid #E5E5E5;
+        border: 1px solid $smokie;
         padding: 6px;
         margin-right: 18px;
         
@@ -45,7 +45,7 @@
         }
         
         &:hover {
-            border: 1px solid #E5E5E5;  
+            border: 1px solid $smokie;  
         }
     }
     
@@ -54,8 +54,8 @@
         height: 22px;
         border-radius: 2px;
         font-size: 10px;
-        background: linear-gradient(180deg, #F4F3F3 0%, #BBB9B9 100%);
-        border: 1px solid #E5E5E5;
+        background: $subscribe-btn;
+        border: 1px solid $smokie;
         cursor: pointer;
         
         &:active {

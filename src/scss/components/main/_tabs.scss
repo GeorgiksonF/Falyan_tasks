@@ -6,15 +6,15 @@
         display: flex;
         flex-direction: column;
         flex: 1 0 19%;
-        background: #EFF8F7;
+        background: $tab-bg;
         padding: 26px 20px 22px;
 
         &:not(:last-child) {
-            border-right: 1px solid #D6E6E6;
+            border-right: 1px solid $tab-border;
         }
         
         &:hover {
-            background: #D9EFEC;
+            background: $tab-hover;
             transition: .3s;
         }
     }
