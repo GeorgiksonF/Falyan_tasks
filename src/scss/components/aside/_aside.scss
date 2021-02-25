@@ -7,7 +7,7 @@
 .aside {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-shrink: 0;
     flex-basis: 140px;
 
     @media only all and (max-width: 992px) {
@@ -15,6 +15,7 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 50px;
+        flex-basis: auto;
     }
 
     @media only all and (max-width: 480px) {

@@ -35,7 +35,7 @@
     
     &__input {
         height: 22px;
-        width: 160px;
+        min-width: 160px;
         border: 1px solid $smokie;
         padding: 6px;
         margin-right: 18px;
@@ -50,7 +50,7 @@
     }
     
     &__btn {
-        width: 80px;
+        min-width: 80px;
         height: 22px;
         border-radius: 2px;
         font-size: 10px;
