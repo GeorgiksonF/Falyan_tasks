@@ -3,7 +3,7 @@
 function arrayDiff(arrayFirst, arraySecond) {
     let resultDiff = [];
 
-    for(let item = 0; item < arrayFirst.length; item++) {
+    for (let item = 0; item < arrayFirst.length; item++) {
         if (!arraySecond.includes(arrayFirst[item])) {
             resultDiff.push(arrayFirst[item]);
         }
