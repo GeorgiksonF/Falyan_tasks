@@ -3,9 +3,9 @@
 function arrayDiff(arrayFirst, arraySecond) {
     let resultDiff = [];
 
-    for (let item = 0; item < arrayFirst.length; item++) {
-        if (!arraySecond.includes(arrayFirst[item])) {
-            resultDiff.push(arrayFirst[item]);
+    for (let i = 0; i < arrayFirst.length; i++) {
+        if (!arraySecond.includes(arrayFirst[i])) {
+            resultDiff.push(arrayFirst[i]);
         }
     }
 
@@ -20,43 +20,31 @@ function alphabetPosition(text) {
     const ENGLISH_UTF_MAX = 122;
     const ENGLISH_UTF_RANGE = 96;
 
-    if (typeof(text) === "string") {
+    let result = [];
 
-        let result = [];
-
-        text = text.replace(/\s+/g, '').toLowerCase().split('');
-        
-        for (let index = 0; index < text.length; index++) {
-            if (text[index].charCodeAt() >= ENGLISH_UTF_MIN && text[index].charCodeAt() <= ENGLISH_UTF_MAX) {
-                result.push(text[index].charCodeAt() - ENGLISH_UTF_RANGE);
-            } else {
-                continue;
-            }
+    text = text.replace(/\s+/g, '').toLowerCase().split('');
+    
+    for (let i = 0; i < text.length; i++) {
+        if (text[i].charCodeAt() >= ENGLISH_UTF_MIN && text[i].charCodeAt() <= ENGLISH_UTF_MAX) {
+            result.push(text[i].charCodeAt() - ENGLISH_UTF_RANGE);
         }
-
-        result = result.join(" ");
-
-        return result;
-
-    } else {
-        return false;
     }
+
+    result = result.join(" ");
+
+    return result;
 }
 
 function squareEveryDigit(digit) {
-    if (typeof(digit) !== "number") {
-        return "Вы ввели не число!";
-    } else if (digit < 0) {
-        digit = -digit;
-    }
-    
     let digitArray = String(digit).split("");
 
-    for (let index = 0; index < digitArray.length; index++) {
-        digitArray[index] = Number(digitArray[index]) ** 2;
+    for (let i = 0; i < digitArray.length; i++) {
+        digitArray[i] = Number(digitArray[i]) ** 2;
     }
 
     let digitResult = digitArray.join("");
 
     return digitResult;
 }
+
+console.log(squareEveryDigit(272))
