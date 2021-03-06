@@ -39,7 +39,11 @@ function squareEveryDigit(digit) {
     let digitArray = String(digit).split("");
 
     for (let i = 0; i < digitArray.length; i++) {
-        digitArray[i] = Number(digitArray[i]) ** 2;
+        digitArray[i] = (digitArray[i] * 1) ** 2;
+    }
+
+    if (isNaN(digitArray[0])) {
+        digitArray[0] = "-";
     }
 
     let digitResult = digitArray.join("");
@@ -47,4 +51,4 @@ function squareEveryDigit(digit) {
     return digitResult;
 }
 
-console.log(squareEveryDigit(272))
+console.log(squareEveryDigit(-272))
